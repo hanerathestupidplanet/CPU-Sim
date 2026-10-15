@@ -7,7 +7,9 @@ mainBuild = build/CpuSim.o
 
 comp = gcc -o
 
-rm -rf $(build)
-mkdir $(build)
+clean:
 
-$(comp) $(main) $(mainBuild)
+	rm -rf $(build)
+	mkdir $(build)
+
+	$(comp) $(mainBuild) $(main) 
